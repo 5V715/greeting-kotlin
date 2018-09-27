@@ -7,15 +7,15 @@ import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
-open class GreetingKotlinApplication {
+class GreetingKotlinApplication {
 
     @Bean
-    open fun sayHello(): (Person) -> String = {
+    fun sayHello(): (Person) -> String = {
         "Hello ${it.name}, how are you today ?"
     }
 
     @Bean
-    open fun mapper(): ObjectMapper = ObjectMapper().registerKotlinModule()
+    fun mapper(): ObjectMapper = ObjectMapper().registerKotlinModule()
 
 
 }
