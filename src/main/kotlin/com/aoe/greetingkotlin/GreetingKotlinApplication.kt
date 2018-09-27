@@ -15,11 +15,6 @@ class GreetingKotlinApplication {
     }
 
     @Bean
-    fun sayOther() : (String) -> String = {
-        "Hello $it, how are you today ?"
-    }
-
-    @Bean
     fun mapper(): ObjectMapper = ObjectMapper().registerKotlinModule()
 
 

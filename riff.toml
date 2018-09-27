@@ -1,1 +1,1 @@
-handler = "com.aoe.greetingkotlin.GreetingKotlinApplication"
+handler = "sayHello&main=com.aoe.greetingkotlin.GreetingKotlinApplication"
